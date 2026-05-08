@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GitHub Trending Collector Output",
+  "description": "github-trending skill 的 stdout 输出格式，每个元素表示一个通过 AI-topic 过滤的仓库。",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["name", "url", "stars", "topics", "description"],
+    "properties": {
+      "name": {
+        "type": "string",
+        "minLength": 1,
+        "description": "仓库全名 (owner/repo)"
+      },
+      "url": {
+        "type": "string",
+        "format": "uri",
+        "pattern": "^https://github\\.com/",
+        "description": "GitHub 仓库完整 URL"
+      },
+      "stars": {
+        "type": "integer",
+        "minimum": 0,
+        "description": "Star 数量"
+      },
+      "topics": {
+        "type": "array",
+        "minItems": 1,
+        "items": { "type": "string" },
+        "description": "仓库 topics 标签列表"
+      },
+      "description": {
+        "type": "string",
+        "description": "仓库原始英文描述，可为空字符串"
+      }
+    },
+    "additionalProperties": false
+  }
+}

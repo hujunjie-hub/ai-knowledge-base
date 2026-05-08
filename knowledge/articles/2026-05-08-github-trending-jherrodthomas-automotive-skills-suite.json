@@ -1,0 +1,17 @@
+{
+  "id": "05e6cec9-019e-7000-a610-15d580dbebfd",
+  "title": "汽车工程领域 Claude Skill 套件 Automotive Skills Suite",
+  "title_en": "jherrodthomas/automotive-skills-suite",
+  "source_url": "https://github.com/jherrodthomas/automotive-skills-suite",
+  "source_type": "github_trending",
+  "summary": "包含 152 个可安装 Claude Skill（76 构建器 + 76 审查器配对），覆盖汽车工程全生命周期：ISO 26262 功能安全（概念→HW→SW→安全案例）、ISO/SAE 21434 网络安全（TARA→目标→架构→事件响应）、ISO 21448 SOTIF（ADAS/AV 预期功能安全）、AIAG-VDA 质量（APQP/DFMEA/PFMEA/PPAP）、ASPICE 评估、AUTOSAR（Classic+Adaptive）、通信协议（CAN/LIN/FlexRay/Ethernet）、诊断（UDS/DTC/ODX）等 12 个领域。每个构建器产出结构化 xlsx 交付物，配对审查器输出可视化仪表盘（KPI 磁贴 + 图表 + 发现表），下游 Skill 消费上游 xlsx 输出形成链式合约。",
+  "tags": [
+    "Agent",
+    "Tool"
+  ],
+  "relevance_score": 0.8,
+  "status": "draft",
+  "fetched_at": "2026-05-08T08:00:00+08:00",
+  "analyzed_at": "2026-05-08T12:00:00+08:00",
+  "published_at": null
+}

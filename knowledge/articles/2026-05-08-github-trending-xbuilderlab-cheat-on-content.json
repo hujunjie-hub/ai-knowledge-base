@@ -1,0 +1,17 @@
+{
+  "id": "05e6cec4-019e-7000-a1cf-bdfd44458e31",
+  "title": "自进化 AI 内容运营系统 Cheat on Content",
+  "title_en": "XBuilderLAB/cheat-on-content",
+  "source_url": "https://github.com/XBuilderLAB/cheat-on-content",
+  "source_type": "github_trending",
+  "summary": "基于 Claude Code 的自进化内容运营系统，将每次内容发布转化为校准实验。核心循环：打分 → 盲预测 → 发布 → T+3 天复盘 → 进化评分公式。包含 13 个 Claude Code 子 Skill，自动学习「你的账号」的内容模式（而非通用训练分布），三个月后预测准度比初始版本强 10 倍。独创防自欺机制：升级评分公式必须经过历史回测 + 跨模型独立审查，不达标不放行。作者声称靠此系统一个月涨粉 100 万。",
+  "tags": [
+    "Tool",
+    "Agent"
+  ],
+  "relevance_score": 0.7,
+  "status": "draft",
+  "fetched_at": "2026-05-08T08:00:00+08:00",
+  "analyzed_at": "2026-05-08T12:00:00+08:00",
+  "published_at": null
+}

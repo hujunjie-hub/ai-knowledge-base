@@ -1,0 +1,17 @@
+{
+  "id": "05e6cec7-019e-7000-b5ef-99fb9cb497f6",
+  "title": "AI Agent 统一虚拟文件系统 Mirage",
+  "title_en": "strukto-ai/mirage",
+  "source_url": "https://github.com/strukto-ai/mirage",
+  "source_type": "github_trending",
+  "summary": "为 AI Agent 设计的统一虚拟文件系统。将 S3、Google Drive、Slack、Gmail、Redis、GitHub、Linear、MongoDB 等数十种服务挂载为单一文件系统树，Agent 使用熟悉的 Unix 命令（cat/grep/cp）操作所有后端，无需学习每个服务的 SDK。Python + TypeScript 双 SDK，支持 OpenAI Agents SDK、Vercel AI SDK、LangChain 等主流 Agent 框架。提供 CLI + 守护进程，可直接接入 Claude Code/Codex。工作区支持快照、克隆和版本管理。",
+  "tags": [
+    "Infra",
+    "Agent"
+  ],
+  "relevance_score": 0.92,
+  "status": "draft",
+  "fetched_at": "2026-05-08T08:00:00+08:00",
+  "analyzed_at": "2026-05-08T12:00:00+08:00",
+  "published_at": null
+}

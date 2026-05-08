@@ -1,0 +1,16 @@
+{
+  "id": "05e6ceb9-019e-7000-bc34-1840845ca56c",
+  "title": "开源 AI 法律服务平台 mike",
+  "title_en": "willchen96/mike",
+  "source_url": "https://github.com/willchen96/mike",
+  "source_type": "github_trending",
+  "summary": "开源 AI 法律服务平台，定位为 OSS AI Legal Platform。项目本周创建即获 2400+ star 和 677 fork，是本周 AI 应用层最大黑马。目前 README 信息有限，从高 fork 数和社区反应推测，可能提供合同审查、法律文书生成、法规检索等 AI 法律辅助功能。TypeScript 技术栈，面向法律行业数字化转型场景。",
+  "tags": [
+    "Tool"
+  ],
+  "relevance_score": 0.75,
+  "status": "draft",
+  "fetched_at": "2026-05-08T08:00:00+08:00",
+  "analyzed_at": "2026-05-08T12:00:00+08:00",
+  "published_at": null
+}

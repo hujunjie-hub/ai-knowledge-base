@@ -1,0 +1,17 @@
+{
+  "id": "05e6cec0-019e-7000-9e4b-0e50ffb1d54c",
+  "title": "AI 编程术语词典 Dictionary of AI Coding",
+  "title_en": "mattpocock/dictionary-of-ai-coding",
+  "source_url": "https://github.com/mattpocock/dictionary-of-ai-coding",
+  "source_type": "github_trending",
+  "summary": "由知名 TypeScript 教育者 Matt Pocock 编写的 AI 编程术语词典，用通俗英语解释 AI 编程领域的所有核心概念。分为 7 大章节：模型基础（Model/Token/Inference）、会话与上下文窗口、工具与环境（Tool/MCP/Sandbox）、故障模式（幻觉/注意力退化/Sycophancy）、交接（Compaction/Handoff）、记忆与引导（AGENTS.md/Skill/Subagent）、工作模式（Vibe Coding/Grilling/AFK）。每个术语包含定义、使用场景和对话示例。",
+  "tags": [
+    "Paper",
+    "Agent"
+  ],
+  "relevance_score": 0.82,
+  "status": "draft",
+  "fetched_at": "2026-05-08T08:00:00+08:00",
+  "analyzed_at": "2026-05-08T12:00:00+08:00",
+  "published_at": null
+}

@@ -1,0 +1,17 @@
+{
+  "id": "05e6cec2-019e-7000-b79a-dee6e082dad1",
+  "title": "中文 AI 提示词开源库 Yao Open Prompts",
+  "title_en": "yaojingang/yao-open-prompts",
+  "source_url": "https://github.com/yaojingang/yao-open-prompts",
+  "source_type": "github_trending",
+  "summary": "《姚金刚提示词合集》开源版本，收录 116 个面向真实场景的中文 AI 提示词，按 9 大分类组织：AI 方法（8）、AI 工作（10）、AI 学习（11）、AI 生活（2）、AI 教育（4）、AI 内容（49）、AI 编程（1）、AI 营销（28）、AI 思考（3）。采用标准化 frontmatter 元数据格式（title/category/version/status/tags），CC BY 4.0 开源协议。特色包括 RTF 元提示词生成系统和 25 个 GEO 营销实战模板。",
+  "tags": [
+    "LLM",
+    "Tool"
+  ],
+  "relevance_score": 0.72,
+  "status": "draft",
+  "fetched_at": "2026-05-08T08:00:00+08:00",
+  "analyzed_at": "2026-05-08T12:00:00+08:00",
+  "published_at": null
+}

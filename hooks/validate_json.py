@@ -27,7 +27,7 @@ REQUIRED_FIELDS: dict[str, type] = {
     "status": str,
 }
 
-VALID_STATUSES = frozenset({"draft", "reviewed", "published", "archived"})
+VALID_STATUSES = frozenset({"draft", "review", "published", "archived"})
 VALID_AUDIENCES = frozenset({"beginner", "intermediate", "advanced"})
 
 # {source}-{YYYYMMDD}-{NNN}，NNN 为 3 位序号

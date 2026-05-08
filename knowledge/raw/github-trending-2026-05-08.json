@@ -1,0 +1,164 @@
+{
+  "meta": {
+    "source": "github_trending",
+    "fetched_at": "2026-05-08T08:00:00+08:00",
+    "period": "weekly",
+    "date_range": "2026-04-28 to 2026-05-08",
+    "total_items": 10,
+    "methodology": "Repositories created in the past 7 days, sorted by stars (desc), filtered for AI/ML/LLM/Agent relevance"
+  },
+  "repositories": [
+    {
+      "rank": 1,
+      "full_name": "willchen96/mike",
+      "url": "https://github.com/willchen96/mike",
+      "description": "OSS AI Legal Platform — 开源 AI 法律平台",
+      "language": "TypeScript",
+      "stars": 2400,
+      "forks": 677,
+      "created_at": "2026-04-29T17:41:12Z",
+      "category": "ai_application",
+      "tags": ["legal", "ai-platform", "oss"],
+      "trending_reason": "本周 AI 应用层最大黑马，将 AI 引入法律服务领域"
+    },
+    {
+      "rank": 2,
+      "full_name": "vercel-labs/deepsec",
+      "url": "https://github.com/vercel-labs/deepsec",
+      "description": "Deepsec is a security harness for finding vulnerabilities in your codebase powered by coding agents — 基于编程 Agent 的代码安全漏洞扫描工具",
+      "language": "TypeScript",
+      "stars": 1678,
+      "forks": 97,
+      "created_at": "2026-04-30T16:16:11Z",
+      "category": "ai_security",
+      "tags": ["security", "coding-agent", "vulnerability", "vercel"],
+      "trending_reason": "Vercel 官方推出的 AI 安全产品，自动化代码漏洞发现"
+    },
+    {
+      "rank": 3,
+      "full_name": "aattaran/deepclaude",
+      "url": "https://github.com/aattaran/deepclaude",
+      "description": "Use Claude Code's autonomous agent loop with DeepSeek V4 Pro, OpenRouter, or any Anthropic-compatible backend. Same UX, 17x cheaper. — 将 Claude Code 与 DeepSeek V4 等后端对接，成本降低 17 倍",
+      "language": "JavaScript",
+      "stars": 1597,
+      "forks": 89,
+      "created_at": "2026-05-03T21:27:49Z",
+      "category": "ai_tooling",
+      "tags": ["claude-code", "deepseek", "agent", "cost-optimization", "openrouter"],
+      "trending_reason": "打通 Claude Code 与 DeepSeek V4 Pro，大幅降低 AI 编程成本"
+    },
+    {
+      "rank": 4,
+      "full_name": "mattpocock/dictionary-of-ai-coding",
+      "url": "https://github.com/mattpocock/dictionary-of-ai-coding",
+      "description": "AI coding jargon, explained in plain English. — AI 编程术语词典，用通俗英语解释",
+      "language": "TypeScript",
+      "stars": 1227,
+      "forks": 146,
+      "created_at": "2026-05-01T10:17:05Z",
+      "category": "ai_education",
+      "tags": ["education", "terminology", "ai-coding", "reference"],
+      "trending_reason": "知名 TS  educator Matt Pocock 出品，降低 AI 编程概念门槛"
+    },
+    {
+      "rank": 5,
+      "full_name": "yaojingang/yao-open-prompts",
+      "url": "https://github.com/yaojingang/yao-open-prompts",
+      "description": "Yao Open Prompts：中文 AI 提示词库，覆盖工作、学习、内容、营销和生活场景",
+      "language": "Python",
+      "stars": 1135,
+      "forks": 177,
+      "created_at": "2026-05-06T13:04:20Z",
+      "category": "ai_prompts",
+      "tags": ["prompt-engineering", "chinese", "ai", "prompts"],
+      "trending_reason": "中文 AI 提示词库，填补中文 Prompt Engineering 生态空白"
+    },
+    {
+      "rank": 6,
+      "full_name": "XBuilderLAB/cheat-on-content",
+      "url": "https://github.com/XBuilderLAB/cheat-on-content",
+      "description": "Content is already a cheat-code race — whoever cracks the patterns first wins the traffic. Your auto-evolving ops expert that learns YOUR account, not the global average. The Claude Code workflow behind 1M followers in 1 month. — AI 驱动的内容运营工具，1 个月涨粉 100 万背后的 Claude Code 工作流",
+      "language": "Python",
+      "stars": 1031,
+      "forks": 217,
+      "created_at": "2026-05-05T10:28:33Z",
+      "category": "ai_content",
+      "tags": ["content", "claude-code", "growth", "social-media", "automation"],
+      "trending_reason": "基于 Claude Code 的爆款内容方法论，实战案例惊艳"
+    },
+    {
+      "rank": 7,
+      "full_name": "strukto-ai/mirage",
+      "url": "https://github.com/strukto-ai/mirage",
+      "description": "A Unified Virtual Filesystem For AI Agents — AI Agent 统一虚拟文件系统，为 Agent 提供沙箱化文件操作能力",
+      "language": "TypeScript",
+      "stars": 1009,
+      "forks": 58,
+      "created_at": "2026-05-06T17:00:48Z",
+      "category": "ai_infra",
+      "tags": ["agent-sandbox", "agent-tools", "ai-agents", "filesystem", "claude-code"],
+      "trending_reason": "解决 AI Agent 文件系统交互的底层基础设施问题"
+    },
+    {
+      "rank": 8,
+      "full_name": "jherrodthomas/automotive-skills-suite",
+      "url": "https://github.com/jherrodthomas/automotive-skills-suite",
+      "description": "100+ installable Claude skills covering ISO 26262 functional safety, ISO/SAE 21434 cybersecurity, ISO 21448 SOTIF, AIAG-VDA quality (APQP/PPAP/FMEA), Automotive SPICE, and continuous improvement tools — 100+ 个汽车工程领域 Claude Skill，覆盖功能安全、网络安全等标准",
+      "stars": 920,
+      "forks": 15,
+      "created_at": "2026-05-01T10:30:37Z",
+      "category": "ai_skills",
+      "tags": ["automotive", "claude-skills", "iso-26262", "functional-safety", "engineering"],
+      "trending_reason": "将 AI Agent Skill 引入专业汽车工程领域，垂直场景标杆"
+    },
+    {
+      "rank": 9,
+      "full_name": "vibeforge1111/keep-codex-fast",
+      "url": "https://github.com/vibeforge1111/keep-codex-fast",
+      "description": "A backup-first Codex skill for keeping local Codex state fast, clean, and recoverable. — Codex 本地状态优化 Skill，保持 Agent 环境快速清洁",
+      "language": "Python",
+      "stars": 874,
+      "forks": 51,
+      "created_at": "2026-05-02T08:57:24Z",
+      "category": "ai_tooling",
+      "tags": ["codex", "skill", "backup", "performance", "agent"],
+      "trending_reason": "解决 AI 编程 Agent 长期运行后的状态膨胀问题"
+    },
+    {
+      "rank": 10,
+      "full_name": "raiyanyahya/how-to-train-your-gpt",
+      "url": "https://github.com/raiyanyahya/how-to-train-your-gpt",
+      "description": "Build a modern LLM from scratch. Every line commented. Explained like we are five. — 从零构建现代 LLM，逐行注释，零基础可学",
+      "language": "Jupyter Notebook",
+      "stars": 690,
+      "forks": 86,
+      "created_at": "2026-05-03T21:41:33Z",
+      "category": "ai_education",
+      "tags": ["llm", "from-scratch", "gpt", "deep-learning", "education"],
+      "trending_reason": "继 rasbt/LLMs-from-scratch 后又一高质量 LLM 教学项目"
+    }
+  ],
+  "honorable_mentions": [
+    {
+      "full_name": "lightseekorg/tokenspeed",
+      "url": "https://github.com/lightseekorg/tokenspeed",
+      "description": "TokenSpeed is a speed-of-light LLM inference engine.",
+      "stars": 641,
+      "note": "极速 LLM 推理引擎，性能导向"
+    },
+    {
+      "full_name": "langgenius/dify",
+      "url": "https://github.com/langgenius/dify",
+      "description": "Production-ready platform for agentic workflow development.",
+      "stars": 140517,
+      "note": "存量超级项目，本周持续活跃，Agent 工作流标杆"
+    },
+    {
+      "full_name": "bytedance/deer-flow",
+      "url": "https://github.com/bytedance/deer-flow",
+      "description": "An open-source long-horizon SuperAgent harness that researches, codes, and creates.",
+      "stars": 65927,
+      "note": "字节跳动开源 SuperAgent 框架，长期任务 Agent 新范式"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "date": "2026-05-08",
+  "source": "github-trending",
+  "generated_at": "2026-05-08T12:00:00+08:00",
+  "total_entries": 9,
+  "filtered_out": [
+    {
+      "full_name": "vibeforge1111/keep-codex-fast",
+      "reason": "relevance_score 0.65 < 0.7"
+    }
+  ],
+  "entries": [
+    {
+      "filename": "2026-05-08-github-trending-willchen96-mike.json",
+      "id": "05e6ceb9-019e-7000-bc34-1840845ca56c",
+      "title": "开源 AI 法律服务平台 mike",
+      "title_en": "willchen96/mike",
+      "relevance_score": 0.75,
+      "tags": [
+        "Tool"
+      ]
+    },
+    {
+      "filename": "2026-05-08-github-trending-vercel-labs-deepsec.json",
+      "id": "05e6cebb-019e-7000-ab27-89b038d3b46d",
+      "title": "AI 驱动的代码安全漏洞深度扫描工具 deepsec",
+      "title_en": "vercel-labs/deepsec",
+      "relevance_score": 0.9,
+      "tags": [
+        "Tool",
+        "Agent"
+      ]
+    },
+    {
+      "filename": "2026-05-08-github-trending-aattaran-deepclaude.json",
+      "id": "05e6cebe-019e-7000-8b8e-be524bf2c0c9",
+      "title": "Claude Code 与 DeepSeek V4 Pro 的代理对接工具 deepclaude",
+      "title_en": "aattaran/deepclaude",
+      "relevance_score": 0.88,
+      "tags": [
+        "Agent",
+        "LLM",
+        "Tool",
+        "Infra"
+      ]
+    },
+    {
+      "filename": "2026-05-08-github-trending-mattpocock-dictionary-of-ai-coding.json",
+      "id": "05e6cec0-019e-7000-9e4b-0e50ffb1d54c",
+      "title": "AI 编程术语词典 Dictionary of AI Coding",
+      "title_en": "mattpocock/dictionary-of-ai-coding",
+      "relevance_score": 0.82,
+      "tags": [
+        "Paper",
+        "Agent"
+      ]
+    },
+    {
+      "filename": "2026-05-08-github-trending-yaojingang-yao-open-prompts.json",
+      "id": "05e6cec2-019e-7000-b79a-dee6e082dad1",
+      "title": "中文 AI 提示词开源库 Yao Open Prompts",
+      "title_en": "yaojingang/yao-open-prompts",
+      "relevance_score": 0.72,
+      "tags": [
+        "LLM",
+        "Tool"
+      ]
+    },
+    {
+      "filename": "2026-05-08-github-trending-xbuilderlab-cheat-on-content.json",
+      "id": "05e6cec4-019e-7000-a1cf-bdfd44458e31",
+      "title": "自进化 AI 内容运营系统 Cheat on Content",
+      "title_en": "XBuilderLAB/cheat-on-content",
+      "relevance_score": 0.7,
+      "tags": [
+        "Tool",
+        "Agent"
+      ]
+    },
+    {
+      "filename": "2026-05-08-github-trending-strukto-ai-mirage.json",
+      "id": "05e6cec7-019e-7000-b5ef-99fb9cb497f6",
+      "title": "AI Agent 统一虚拟文件系统 Mirage",
+      "title_en": "strukto-ai/mirage",
+      "relevance_score": 0.92,
+      "tags": [
+        "Infra",
+        "Agent"
+      ]
+    },
+    {
+      "filename": "2026-05-08-github-trending-jherrodthomas-automotive-skills-suite.json",
+      "id": "05e6cec9-019e-7000-a610-15d580dbebfd",
+      "title": "汽车工程领域 Claude Skill 套件 Automotive Skills Suite",
+      "title_en": "jherrodthomas/automotive-skills-suite",
+      "relevance_score": 0.8,
+      "tags": [
+        "Agent",
+        "Tool"
+      ]
+    },
+    {
+      "filename": "2026-05-08-github-trending-raiyanyahya-how-to-train-your-gpt.json",
+      "id": "05e6cecb-019e-7000-a960-5f2c91212b6f",
+      "title": "从零构建现代 LLM 互动教材 How to Train Your GPT",
+      "title_en": "raiyanyahya/how-to-train-your-gpt",
+      "relevance_score": 0.85,
+      "tags": [
+        "Paper",
+        "LLM"
+      ]
+    }
+  ]
+}

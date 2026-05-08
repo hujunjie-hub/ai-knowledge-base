@@ -1,0 +1,241 @@
+{
+  "meta": {
+    "source": "analyzer",
+    "input": "knowledge/raw/github-trending-2026-05-08.json",
+    "analyzed_at": "2026-05-08T12:00:00+08:00",
+    "total_items": 10,
+    "methodology": "逐条 WebFetch GitHub README → 深度阅读 → 中文摘要 + 技术亮点 + 1-10 评分 + 标签建议",
+    "score_distribution": {
+      "9": ["vercel-labs/deepsec", "strukto-ai/mirage", "raiyanyahya/how-to-train-your-gpt"],
+      "8": ["aattaran/deepclaude", "mattpocock/dictionary-of-ai-coding", "jherrodthomas/automotive-skills-suite"],
+      "7": ["willchen96/mike", "yaojingang/yao-open-prompts", "XBuilderLAB/cheat-on-content"],
+      "6": ["vibeforge1111/keep-codex-fast"]
+    }
+  },
+  "analyses": [
+    {
+      "rank": 1,
+      "full_name": "willchen96/mike",
+      "url": "https://github.com/willchen96/mike",
+      "summary_cn": "开源 AI 法律服务平台，定位为 OSS AI Legal Platform。项目本周创建即获 2400+ star 和 677 fork，是本周 AI 应用层最大黑马。目前 README 信息有限，从高 fork 数和社区反应推测，可能提供合同审查、法律文书生成、法规检索等 AI 法律辅助功能。TypeScript 技术栈，面向法律行业数字化转型场景。",
+      "highlights": [
+        "本周 Github Trending 综合排名第一，增长曲线极陡（创建 9 天即破 2400 star）",
+        "677 fork 显示开发者高度关注，社区参与意愿强",
+        "切入法律服务这一高价值垂直领域，AI 替代人工的明确场景",
+        "开源策略降低了法律 AI 工具的获取门槛"
+      ],
+      "score": 7,
+      "score_reason": "增长数据惊艳（2400 star / 9 天），切入法律 AI 这一高价值垂直赛道，社区参与度高（677 fork）。扣分点：README 内容单薄，暂不清楚具体功能范围和技术深度；项目过于早期，可持续性待观察。",
+      "tags": ["AI-Application", "LegalTech", "OpenSource", "Vertical-AI"],
+      "relevance_score": 0.75,
+      "category": "ai_application"
+    },
+    {
+      "rank": 2,
+      "full_name": "vercel-labs/deepsec",
+      "url": "https://github.com/vercel-labs/deepsec",
+      "summary_cn": "Vercel 官方推出的 AI 驱动代码安全扫描工具，将编程 Agent（Claude/Codex）用于大规模代码库的深度漏洞发现。区别于传统 SAST 工具的规则匹配，deepsec 使用「最高思考级别」的 LLM 逐文件进行安全审计，擅长发现长期潜伏的隐蔽漏洞。架构分为 scan（正则初筛，快速无 AI）→ process（AI 深度调查）→ revalidate（降误报）三阶段管道。支持 Vercel Sandbox 分布式并行扫描大型 monorepo。",
+      "highlights": [
+        "Vercel 官方出品，Apache 2.0 协议，企业级可信度",
+        "三阶段管道设计精巧：正则快速初筛 → LLM 深度分析 → 交叉验证降噪，兼顾速度与精度",
+        "「最高思考级别」AI 审计策略——宁可贵也要找到真漏洞，定位准确（单次扫描可达数千至数万美元）",
+        "断点续扫机制：中断后重新运行自动跳过已分析文件，适合超大型代码库",
+        "支持 Vercel Sandbox 分布式执行，10+ worker 并行 + 沙箱隔离防止 API Key 泄露",
+        "PR 模式（process --diff）：可集成 CI 对每次 PR 进行增量安全审查",
+        "插件架构 + 自定义 Matcher 系统，可让编程 Agent 自行扩展检测规则"
+      ],
+      "score": 9,
+      "score_reason": "Vercel 官方背景保证长期维护；设计理念先进——用 LLM 替代规则引擎做深度安全审计，解决了传统 SAST 误报率高、漏报隐蔽漏洞的痛点；管道架构成熟（scan→process→revalidate→export）；分布式沙箱执行解决规模化问题。扣分点：成本极高（千至万美元级别），对个人开发者和小团队不友好；依赖 Vercel AI Gateway，存在供应商锁定风险。",
+      "tags": ["Security", "Code-Scanning", "Agent", "DevSecOps", "Vercel"],
+      "relevance_score": 0.90,
+      "category": "ai_security"
+    },
+    {
+      "rank": 3,
+      "full_name": "aattaran/deepclaude",
+      "url": "https://github.com/aattaran/deepclaude",
+      "summary_cn": "将 Claude Code 的自主 Agent 循环与 DeepSeek V4 Pro 对接的代理工具，保持 Claude Code 的全部工具链能力（文件编辑、Bash、Git、子 Agent），仅替换底层推理模型。通过 localhost:3200 本地代理拦截 API 调用，将会话透明路由到 DeepSeek V4 Pro（$0.87/M output）、OpenRouter 或 Fireworks AI。成本降至 Anthropic 官方价的 1/17，支持会话中热切换后端（`/deepseek`、`/anthropic` 斜杠命令），无需重启。",
+      "highlights": [
+        "架构巧妙——仅劫持 ANTHROPIC_BASE_URL 环境变量到本地代理，零侵入 Claude Code 本体",
+        "成本优势惊人：重度用户 $200/月 → $50/月，轻量用户 $200/月 → $20/月",
+        "DeepSeek 自动上下文缓存使 Agent 循环极便宜——首次后缓存命中仅 $0.004/M input（120x 降低）",
+        "会话中热切换后端：`/deepseek` / `/anthropic` / `/openrouter` 斜杠命令，无需重启",
+        "多后端支持：DeepSeek（默认最便宜）、OpenRouter（美国最低延迟）、Fireworks（最快推理）、Anthropic（复杂任务）",
+        "退出时自动恢复原始环境变量，不影响正常 Claude Code 使用",
+        "5 月 3 日创建，4 天即获 1597 star，证明成本痛点共鸣极强"
+      ],
+      "score": 8,
+      "score_reason": "精准击中 Claude Code 用户最大痛点——成本。技术实现简洁优雅（本地代理 + 环境变量切换），非破坏性集成。多后端支持 + 热切换赋予用户灵活的成本/质量选择权。扣分点：不支持图片/视觉输入（DeepSeek Anthropic 兼容层限制）；MCP 工具不兼容；复杂推理任务上 DeepSeek V4 Pro 弱于 Claude Opus；依赖 DeepSeek API 可用性。",
+      "tags": ["Claude-Code", "DeepSeek", "Cost-Optimization", "Agent-Tooling", "Proxy"],
+      "relevance_score": 0.88,
+      "category": "ai_tooling"
+    },
+    {
+      "rank": 4,
+      "full_name": "mattpocock/dictionary-of-ai-coding",
+      "url": "https://github.com/mattpocock/dictionary-of-ai-coding",
+      "summary_cn": "由知名 TypeScript 教育者 Matt Pocock 编写的 AI 编程术语词典，用通俗英语解释 AI 编程领域的所有核心概念。分为 7 大章节：模型基础（Model/Token/Inference）、会话与上下文窗口、工具与环境（Tool/MCP/Sandbox）、故障模式（幻觉/注意力退化/Sycophancy）、交接（Compaction/Handoff）、记忆与引导（AGENTS.md/Skill/Subagent）、工作模式（Vibe Coding/Grilling/AFK）。每个术语包含定义、使用场景和对话示例。",
+      "highlights": [
+        "Matt Pocock 出品——TypeScript 社区最有影响力的教育者之一，内容质量有保证",
+        "精准命名痛点：\"AI coding can feel like it's just for experts. There's a whole VC-funded economy that benefits from keeping it hard to understand\"",
+        "7 大章节覆盖从底层模型到上层工作模式的完整知识图谱，结构化程度极高",
+        "每个术语附带 'Usage' 对话示例——不仅告诉你什么意思，还教你怎么在对话中正确使用",
+        "区分 'Model' vs 'Harness'、'Context' vs 'Context Window' 等易混淆概念，精准度高",
+        "自动生成管道（dictionary/*.md → 编译 → README），社区贡献友好",
+        "搭配 aihero.dev  newsletter（62000+ 订阅），形成学习生态闭环"
+      ],
+      "score": 8,
+      "score_reason": "填补了 AI 编程领域「术语混乱」的关键知识空白；Matt Pocock 的个人品牌和教学能力保证了内容深度和可读性；结构化分类 + Usage 示例的设计让词典不仅是查阅工具更是学习路径。扣分点：内容偏重 Anthropic/Claude Code 生态（AGENTS.md、Skills、Compaction 等），对 OpenAI/GPT 生态覆盖不足；目前为英文版本，中文开发者受益有限。",
+      "tags": ["Education", "Reference", "AI-Coding", "Terminology", "Knowledge-Base"],
+      "relevance_score": 0.82,
+      "category": "ai_education"
+    },
+    {
+      "rank": 5,
+      "full_name": "yaojingang/yao-open-prompts",
+      "url": "https://github.com/yaojingang/yao-open-prompts",
+      "summary_cn": "《姚金刚提示词合集》开源版本，收录 116 个面向真实场景的中文 AI 提示词，按 9 大分类组织：AI 方法（8）、AI 工作（10）、AI 学习（11）、AI 生活（2）、AI 教育（4）、AI 内容（49）、AI 编程（1）、AI 营销（28）、AI 思考（3）。采用标准化 frontmatter 元数据格式（title/category/version/status/tags），CC BY 4.0 开源协议。特色包括 RTF 元提示词生成系统和 25 个 GEO 营销实战模板。",
+      "highlights": [
+        "目前最成体系的中文开源提示词库，116 个提示词 + 9 大分类 + 标准化元数据",
+        "RTF 元提示词生成系统 V0.6：将需求分析→角色工程→任务架构→格式规范→质量评估串成可复用流程",
+        "GEO 营销模板（25 个）：从 SEO 到 AI 时代 GEO 的实战方法论，覆盖内容工程、信源建设、数据监测",
+        "严谨的仓库管理：Python 脚本自动生成目录/网页/质量检查，CHANGELOG + CONTRIBUTING + 发布清单",
+        "英文镜像版同步维护，国际化意识强",
+        "frontmatter 规范化 + 模板化新提示词提交流程，社区协作友好"
+      ],
+      "score": 7,
+      "score_reason": "中文 Prompt Engineering 领域目前最规范的开源仓库，内容覆盖面广（工作/学习/内容/营销），元数据和工程化管理标准高。扣分点：提示词质量参差不齐——部分来自原文合集搬运，未经严格效果验证；AI 编程仅 1 个提示词，偏科严重；'AI 生活'仅 2 个，分类密度不均；提示词效果高度依赖目标模型，缺乏跨模型测试矩阵。",
+      "tags": ["Prompt-Engineering", "Chinese", "Content-Library", "OpenSource", "GEO"],
+      "relevance_score": 0.72,
+      "category": "ai_prompts"
+    },
+    {
+      "rank": 6,
+      "full_name": "XBuilderLAB/cheat-on-content",
+      "url": "https://github.com/XBuilderLAB/cheat-on-content",
+      "summary_cn": "基于 Claude Code 的自进化内容运营系统，将每次内容发布转化为校准实验。核心循环：打分 → 盲预测 → 发布 → T+3 天复盘 → 进化评分公式。包含 13 个 Claude Code 子 Skill，自动学习「你的账号」的内容模式（而非通用训练分布），三个月后预测准度比初始版本强 10 倍。独创防自欺机制：升级评分公式必须经过历史回测 + 跨模型独立审查，不达标不放行。作者声称靠此系统一个月涨粉 100 万。",
+      "highlights": [
+        "核心洞察精准：'90% 的创作者凭感觉发 → 数据拉胯 → 不知道为什么 → 下一条还是凭感觉'",
+        "将内容运营从「艺术」变为「工程」：每次发布 = 一次校准实验，数据闭环驱动迭代",
+        "防自欺机制巧妙：升级评分公式必须跨模型独立审核 + 历史样本回测，比旧公式更准才放行",
+        "个性化学习：评分公式从 YOUR 历史数据反推，不依赖通用训练分布，账号专属模型",
+        "13 个子 Skill 通过软链接安装到 ~/.claude/skills/，一次安装全局可用",
+        "工作流完整：onboarding（对标账号导入）→ 日常（打分/预测/发布/复盘）→ 进化（rubric 升级）"
+      ],
+      "score": 7,
+      "score_reason": "将内容运营系统化、工程化的思路新颖且实用；13 个 Skill + 完整工作流 + 防自欺机制显示了较高的工程成熟度；'一个月涨粉 100 万' 的案例虽无法独立验证但方法论合理。扣分点：严重依赖 Claude Code 生态，12 个 Skill 安装到手工作坊步骤多；仅适用于社交媒体内容（短视频/图文），非通用 AI 工具；开源仅 3 天（5/5 创建），代码成熟度和社区审查不足。",
+      "tags": ["Content", "Claude-Code", "Growth", "Automation", "Social-Media"],
+      "relevance_score": 0.70,
+      "category": "ai_content"
+    },
+    {
+      "rank": 7,
+      "full_name": "strukto-ai/mirage",
+      "url": "https://github.com/strukto-ai/mirage",
+      "summary_cn": "为 AI Agent 设计的统一虚拟文件系统。将 S3、Google Drive、Slack、Gmail、Redis、GitHub、Linear、MongoDB 等数十种服务挂载为单一文件系统树，Agent 使用熟悉的 Unix 命令（cat/grep/cp）操作所有后端，无需学习每个服务的 SDK。Python + TypeScript 双 SDK，支持 OpenAI Agents SDK、Vercel AI SDK、LangChain 等主流 Agent 框架。提供 CLI + 守护进程，可直接接入 Claude Code/Codex。工作区支持快照、克隆和版本管理。",
+      "highlights": [
+        "架构理念优雅：利用 LLM 对文件系统和 Bash 的高度熟练度，将异构服务统一为文件树，零学习成本",
+        "覆盖面极广：S3、Gmail、Slack、GitHub、Notion、Redis、MongoDB、SSH 等 20+ 后端，统一为单一挂载树",
+        "双语言 SDK：Python (mirage-ai) + TypeScript (@struktoai/mirage-node/browser/core)，覆盖主流开发生态",
+        "主流 Agent 框架原生集成：OpenAI Agents SDK、Vercel AI SDK、LangChain、Pydantic AI、CAMEL、OpenHands",
+        "可组合命令系统：支持按资源和文件类型覆盖命令行为（如 S3 上的 Parquet 文件 cat → JSON 行输出）",
+        "工作区可移植：snapshot/load 支持 Agent 运行环境在机器间迁移，无需重配置",
+        "CLI + daemon 模式直接接入 Claude Code/Codex，Agent 可通过 Bash 透明访问所有挂载资源"
+      ],
+      "score": 9,
+      "score_reason": "解决了 AI Agent 生态的核心基础设施问题——异构服务集成。设计哲学深刻理解 LLM 的能力边界（善用 Bash/文件系统抽象），而非让 Agent 学习 N 个 SDK。工程成熟度高：双语言 SDK + 多框架集成 + 可移植工作区。扣分点：依赖 FUSE（仅 macOS/Linux）；Python ≥3.12 要求排除了部分旧环境；strukto.ai 作为初创公司的长期维护承诺待验证。",
+      "tags": ["Agent-Infra", "Filesystem", "Agent-Tools", "Multi-Backend", "Integration"],
+      "relevance_score": 0.92,
+      "category": "ai_infra"
+    },
+    {
+      "rank": 8,
+      "full_name": "jherrodthomas/automotive-skills-suite",
+      "url": "https://github.com/jherrodthomas/automotive-skills-suite",
+      "summary_cn": "包含 152 个可安装 Claude Skill（76 构建器 + 76 审查器配对），覆盖汽车工程全生命周期：ISO 26262 功能安全（概念→HW→SW→安全案例）、ISO/SAE 21434 网络安全（TARA→目标→架构→事件响应）、ISO 21448 SOTIF（ADAS/AV 预期功能安全）、AIAG-VDA 质量（APQP/DFMEA/PFMEA/PPAP）、ASPICE 评估、AUTOSAR（Classic+Adaptive）、通信协议（CAN/LIN/FlexRay/Ethernet）、诊断（UDS/DTC/ODX）等 12 个领域。每个构建器产出结构化 xlsx 交付物，配对审查器输出可视化仪表盘（KPI 磁贴 + 图表 + 发现表），下游 Skill 消费上游 xlsx 输出形成链式合约。",
+      "highlights": [
+        "规模惊人：152 个 Skill × 12 个工程领域，覆盖汽车电子从概念到量产的完整 V 模型",
+        "Builder + Reviewer 配对模式：每个产出型 Skill 自动配审查者，形成内置质量门禁",
+        "链式架构是核心竞争力：下游 Skill 消费上游 xlsx 输出（如 HARA → FSC → TSC → HW/SW Lane → Safety Case），形成不可分割的工具链网络",
+        "审查器输出可视化仪表盘：KPI 磁贴 + 图表 + 发现表格，非工程背景管理者可直观理解",
+        "标准覆盖率极高：ISO 26262-2/3/5/6/8、ISO 21434、ISO 21448、IATF 16949、ASPICE PAM 3.1、AUTOSAR Classic+Adaptive、ASAM MCD-2 MC",
+        "每个 Skill 声明触发描述，自然语言即可调用（如 'Build a HARA for Electronic Stability Control'）",
+        "汽车行业 AI 应用标杆——展示了 Agent Skill 在高度规范化行业的可落地性"
+      ],
+      "score": 8,
+      "score_reason": "规模（152 Skill）、深度（12 个工程领域 × 完整生命周期）、标准化程度（每项对齐国际标准）均属于 Claude Skill 生态顶级。Builder+Reviewer 配对模式 + 链式架构设计精巧，直接解决了工程领域的质量追溯需求。扣分点：仅面向汽车行业，受众面窄；对 Claude 依赖极高（Skill 生态绑定）；非工程师用户几乎无法独立评价 Skill 输出质量。",
+      "tags": ["Claude-Skills", "Automotive", "Safety", "Engineering", "Domain-Specialization"],
+      "relevance_score": 0.80,
+      "category": "ai_skills"
+    },
+    {
+      "rank": 9,
+      "full_name": "vibeforge1111/keep-codex-fast",
+      "url": "https://github.com/vibeforge1111/keep-codex-fast",
+      "summary_cn": "Codex（Anthropic 的 AI 编程 Agent）本地状态维护 Skill。解决 Codex 长期运行后因聊天记录膨胀、过期 worktree 堆积、日志累积、线程元数据臃肿导致的性能下降问题。三种工作模式：Inspect（只读报告）、Maintain（备份后归档/清理）、Repair（修复 SQLite 线程元数据膨胀）。核心理念「Handoffs First」：归档旧对话前先生成交接文档，确保上下文不丢失。提供定期提醒机制（每周/双周），但从不自动执行变更操作。",
+      "highlights": [
+        "精准解决 Codex 重度用户的真实痛点：长期使用后状态膨胀 → 导航卡顿 → 启动变慢",
+        "Handoffs First 设计哲学：先创建交接文档 → 再归档旧聊天，上下文保持连续性",
+        "三模式安全策略：默认只读（Inspect）→ 手动确认后执行（Maintain）→ 极端情况修复（Repair），逐级加锁",
+        "线程元数据臃肿检测：识别 SQLite 中存储超长标题/预览的线程，专门修复而不动对话正文",
+        "恢复机制完善：修复前备份 + repair manifest 记录原始值 + restore 脚本，可逆操作",
+        "自动化约束清醒：定时提醒只做报告不执行变更——'无法自动判断你是否已为关心的聊天创建了交接文档'"
+      ],
+      "score": 6,
+      "score_reason": "实用工具，精准解决 Codex 重度用户的性能痛点；Handoffs First + 三模式安全策略体现了深思熟虑的安全设计。扣分项明显：问题本身是 Codex 产品的临时缺陷（状态管理），上游可能在后续版本中修复而使 Skill 过时；仅服务于 Codex 单一工具，受众窄；功能范围有限，本质是 Python 脚本 + Skill 封装。",
+      "tags": ["Codex", "Maintenance", "Agent-Tooling", "Performance", "Utility"],
+      "relevance_score": 0.65,
+      "category": "ai_tooling"
+    },
+    {
+      "rank": 10,
+      "full_name": "raiyanyahya/how-to-train-your-gpt",
+      "url": "https://github.com/raiyanyahya/how-to-train-your-gpt",
+      "summary_cn": "从零构建现代 LLM 的互动教材，12 章 3900+ 行代码，100% 逐行注释。实现 LLaMA 3 风格架构（RoPE/RMSNorm/SwiGLU/Pre-Norm），覆盖完整流程：BPE Tokenizer → Embedding → RoPE 位置编码 → Multi-Head Attention → Transformer Block → 完整 GPT 模型（151M 参数）→ 训练管道（AdamW/Cosine Warmup/Mixed Precision）→ 推理引擎（KV Cache/Temperature/Top-k/Top-p）。每章四步教学：直觉类比 → 手算示例 → 注释代码 → 可视化图表。配套 Jupyter Notebook 可直接运行。零 ML 基础要求，仅需 Python 基础。",
+      "highlights": [
+        "教学设计极致：每章采用 类比(5-year-old级) → 手算示例(真实数字) → 注释代码(WHAT+WHY) → 流程图(可视化) 四步法",
+        "架构现代化：LLaMA 3 风格（RoPE/RMSNorm/SwiGLU/Pre-Norm），非过时的 GPT-2 教学（很多教材仍停留在 2019 年）",
+        "100% 逐行注释 + WHY 解释：不仅展示怎么实现，而且解释为什么选这个设计（如 'Why RoPE rotates vectors instead of adding position numbers'）",
+        "规模可控可运行：默认 17M 参数 tiny model（CPU 几分钟可训练），可选 151M 配置（需 GPU），学习梯度合理",
+        "对比表格清晰：RoPE vs Learned Positional、RMSNorm vs LayerNorm、SwiGLU vs ReLU，帮助理解架构演进逻辑",
+        "Jupyter Notebook 配套：剥离解释保留纯代码，可从 Cell → Run All 看到模型实时学习",
+        "12 章覆盖从 Tokenization 到 Inference 全链路，学完可读懂现代 ML 论文中的每个组件"
+      ],
+      "score": 9,
+      "score_reason": "当前 LLM 教育领域最好的从零构建教材之一。教学设计（类比→手算→代码→可视化）解决了 ML 教育资源的两极分化问题（太浅只调 API vs 太深要 PhD 数学）。现代架构（LLaMA 3 风格）+ 100% 注释 + Jupyter 配套，可操作性极强。扣分点：仅覆盖 Decoder-only 架构，不涉及 Encoder-Decoder（T5）或非 Transformer 架构（Mamba/RWKV）；训练数据集为 tiny demo 数据（故意为之），无法展示大规模分布式训练的真实挑战。",
+      "tags": ["Education", "From-Scratch", "Transformer", "Deep-Learning", "LLM-Architecture"],
+      "relevance_score": 0.85,
+      "category": "ai_education"
+    }
+  ],
+  "summary": {
+    "top_themes": [
+      {
+        "theme": "Claude Code / Codex 生态爆发",
+        "detail": "TOP10 中有 4 个项目直接构建在 Claude Code 生态之上（deepclaude、cheat-on-content、automotive-skills-suite、keep-codex-fast），表明 Claude Code 已具备平台级生态效应",
+        "affected_projects": ["aattaran/deepclaude", "XBuilderLAB/cheat-on-content", "jherrodthomas/automotive-skills-suite", "vibeforge1111/keep-codex-fast"]
+      },
+      {
+        "theme": "AI Agent 基础设施层成熟",
+        "detail": "mirage 的虚拟文件系统和 deepsec 的分布式扫描架构表明，Agent 基础设施正从「能不能跑通」进化到「能不能规模化、安全地跑通」",
+        "affected_projects": ["strukto-ai/mirage", "vercel-labs/deepsec"]
+      },
+      {
+        "theme": "AI 成本优化成核心叙事",
+        "detail": "deepclaude 以 '17x cheaper' 为核心卖点 4 天拿下 1597 star，证明成本仍然是 Agent 普及的最大障碍",
+        "affected_projects": ["aattaran/deepclaude"]
+      },
+      {
+        "theme": "垂直领域 AI 应用深化",
+        "detail": "法律（mike）、汽车（automotive-skills-suite）、内容（cheat-on-content）三大垂直场景涌现专业级 AI 工具，不再停留在通用聊天层面",
+        "affected_projects": ["willchen96/mike", "jherrodthomas/automotive-skills-suite", "XBuilderLAB/cheat-on-content"]
+      },
+      {
+        "theme": "AI 教育需求分层",
+        "detail": "dictionary-of-ai-coding（术语层）和 how-to-train-your-gpt（原理层）分别服务不同深度的学习需求，AI 知识传播体系正在完善",
+        "affected_projects": ["mattpocock/dictionary-of-ai-coding", "raiyanyahya/how-to-train-your-gpt"]
+      }
+    ],
+    "score_summary": "平均分 7.7/10。3 个 9 分项目（deepsec/mirage/how-to-train-your-gpt）在各自领域代表了当前最高工程或教育水准；3 个 8 分项目（deepclaude/dictionary/automotive-skills）精准解决了真实痛点；3 个 7 分项目（mike/yao-open-prompts/cheat-on-content）方向正确但成熟度待验证；1 个 6 分项目（keep-codex-fast）实用但依赖 Codex 上游修复。评分覆盖 6-9 共 4 个区间。"
+  }
+}

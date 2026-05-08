@@ -1,0 +1,17 @@
+{
+  "id": "05e6cecb-019e-7000-a960-5f2c91212b6f",
+  "title": "从零构建现代 LLM 互动教材 How to Train Your GPT",
+  "title_en": "raiyanyahya/how-to-train-your-gpt",
+  "source_url": "https://github.com/raiyanyahya/how-to-train-your-gpt",
+  "source_type": "github_trending",
+  "summary": "从零构建现代 LLM 的互动教材，12 章 3900+ 行代码，100% 逐行注释。实现 LLaMA 3 风格架构（RoPE/RMSNorm/SwiGLU/Pre-Norm），覆盖完整流程：BPE Tokenizer → Embedding → RoPE 位置编码 → Multi-Head Attention → Transformer Block → 完整 GPT 模型（151M 参数）→ 训练管道（AdamW/Cosine Warmup/Mixed Precision）→ 推理引擎（KV Cache/Temperature/Top-k/Top-p）。每章四步教学：直觉类比 → 手算示例 → 注释代码 → 可视化图表。配套 Jupyter Notebook 可直接运行。零 ML 基础要求，仅需 Python 基础。",
+  "tags": [
+    "Paper",
+    "LLM"
+  ],
+  "relevance_score": 0.85,
+  "status": "draft",
+  "fetched_at": "2026-05-08T08:00:00+08:00",
+  "analyzed_at": "2026-05-08T12:00:00+08:00",
+  "published_at": null
+}

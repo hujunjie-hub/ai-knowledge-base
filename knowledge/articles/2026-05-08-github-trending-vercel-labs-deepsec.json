@@ -1,0 +1,17 @@
+{
+  "id": "05e6cebb-019e-7000-ab27-89b038d3b46d",
+  "title": "AI 驱动的代码安全漏洞深度扫描工具 deepsec",
+  "title_en": "vercel-labs/deepsec",
+  "source_url": "https://github.com/vercel-labs/deepsec",
+  "source_type": "github_trending",
+  "summary": "Vercel 官方推出的 AI 驱动代码安全扫描工具，将编程 Agent（Claude/Codex）用于大规模代码库的深度漏洞发现。区别于传统 SAST 工具的规则匹配，deepsec 使用「最高思考级别」的 LLM 逐文件进行安全审计，擅长发现长期潜伏的隐蔽漏洞。架构分为 scan（正则初筛，快速无 AI）→ process（AI 深度调查）→ revalidate（降误报）三阶段管道。支持 Vercel Sandbox 分布式并行扫描大型 monorepo。",
+  "tags": [
+    "Tool",
+    "Agent"
+  ],
+  "relevance_score": 0.9,
+  "status": "draft",
+  "fetched_at": "2026-05-08T08:00:00+08:00",
+  "analyzed_at": "2026-05-08T12:00:00+08:00",
+  "published_at": null
+}

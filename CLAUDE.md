@@ -12,7 +12,7 @@ AI 知识库助手 — 自动从 GitHub Trending 和 Hacker News 采集 AI/LLM/A
 
 | 层面 | 选型 | 说明 |
 |------|------|------|
-| Runtime | Python 3.12 | 最低要求 3.12，利用新语法特性 |
+| Runtime | Python 3.12-only | 锁定 3.12，不接受 3.13+ 语法 |
 | AI 模型 | Claude (Anthropic) + 国产大模型 | Claude 负责深度分析，国产模型处理摘要与翻译 |
 | Agent 编排 | LangGraph | 多 Agent 协同，有状态工作流 |
 | 分发框架 | OpenClaw | 统一适配 Telegram / 飞书等渠道 |
@@ -21,13 +21,21 @@ AI 知识库助手 — 自动从 GitHub Trending 和 Hacker News 采集 AI/LLM/A
 
 ## Coding standards
 
-- **[PEP 8](https://peps.python.org/pep-0008/)** — 代码风格以 PEP 8 为准，行宽 120 字符
-- **snake_case** — 变量、函数、文件名统一使用 snake_case
-- **Google 风格 docstring** — 所有公共函数/类必须有 docstring，格式遵循 [Google Python Style Guide](https://google.github.io/styleguide/pyguide.html#38-comments-and-docstrings)
-- **类型注解** — 函数签名必须包含类型注解；使用 `mypy` 检查
-- **禁止裸 `print()`** — 日志统一使用 `logging` 模块，按需配置 logger
-- **禁止裸 `except:`** — 异常捕获必须指定异常类型
-- **import 顺序** — 标准库 → 第三方库 → 本地模块，每组间空一行
+完整规范见 [`specs/coding-standards.md`](specs/coding-standards.md)。以下为硬性红线摘要：
+
+- **Python 3.12-only** — 不接受 3.13+ 语法。
+- **行宽 99 字符** — PEP 8 推荐值。
+- **snake_case** — 变量、函数、文件名。
+- **Google 风格 docstring** — 公共函数/类必须有；`Args:`/`Returns:` 段只写语义，不重复类型注解。
+- **类型注解** — 函数签名必须有；mypy 6 个 strict flag 全开，CI 零错误。
+- **禁止裸 `print()`** — ruff T201 拦截；日志统一用 `logging` + `python-json-logger`，输出 JSON Lines。
+- **禁止裸 `except:`** — 必须指定异常类型。
+- **禁止 async 上下文中同步阻塞** — `time.sleep()` → `await asyncio.sleep()`，`requests` → `httpx`。
+- **import 顺序** — 标准库 → 第三方 → 本地，isort `--profile=black`，CI 强制。
+- **环境变量** — `{SERVICE}_{FIELD}` 全大写格式，`.env.example` 必填，禁止硬编码密钥。
+- **依赖管理** — `uv`，`uv.lock` 必须进版本控制。
+- **测试覆盖率** — 业务逻辑 ≥90% / 工具 ≥80% / 边界适配 ≥50%；LLM 调用不计入。
+- **规范变更** — 必须通过 `specs/` 下补丁文件提出，不得直接修改本文件或 coding-standards.md。
 
 ---
 
@@ -41,10 +49,14 @@ AI 知识库助手 — 自动从 GitHub Trending 和 Hacker News 采集 AI/LLM/A
 
 knowledge/           # 知识数据
 ├── raw/             # 原始采集数据（未经分析的原始 API 响应）
-└── articles/        # 分析后的结构化知识条目 JSON 文件
+└── articles/        # 分析后的结构化知识条目（每文件一条，{date}-{source}-{slug}.json）+ 当日索引
+
+specs/               # 项目规范与变更补丁
 
 agents/              # Agent 实现代码（LangGraph 工作流）
 skills/              # Skill 实现代码
+schemas/             # JSON Schema 定义、字段验证、数据模型
+pipeline/            # 工具函数、API 封装、配置加载
 scripts/             # 一键运行脚本（fetch / analyze / distribute）
 ```
 
@@ -52,7 +64,7 @@ scripts/             # 一键运行脚本（fetch / analyze / distribute）
 
 ## Knowledge entry JSON schema
 
-每条知识条目存储为单个 JSON 对象，按日期分文件存放在 `knowledge/articles/YYYY-MM-DD.json` 中。
+每条知识条目存储为单个 JSON 文件，按 `<date>-<source>-<slug>` 命名存放于 `knowledge/articles/`。每日另生成一份轻量索引文件 `<date>-index.json`，列出当日全部入库条目及路径。
 
 ```json
 {
@@ -86,15 +98,16 @@ scripts/             # 一键运行脚本（fetch / analyze / distribute）
 | 角色 | 职责 | 输入 | 输出 | 关键约束 |
 |------|------|------|------|----------|
 | **Collector** 采集 Agent | 从 GitHub Trending / Hacker News 拉取原始数据，去重，入 raw 库 | API 响应 | `knowledge/raw/YYYY-MM-DD.json` | 不做任何内容过滤或评分 |
-| **Analyzer** 分析 Agent | 对原始条目逐条分析：翻译标题、生成摘要、打标签、评估相关度 | `knowledge/raw/YYYY-MM-DD.json` | `knowledge/articles/YYYY-MM-DD.json` | 必须参考前一日 articles 避免重复；relevance_score < 0.7 丢弃 |
-| **Curator** 整理 Agent | 审核当日 articles，决策发布顺序，生成推送文案，分发到各渠道 | `knowledge/articles/YYYY-MM-DD.json` | Telegram / 飞书消息 | 每条消息必须含来源链接；status 必须流转至 `published` |
+| **Analyzer** 分析 Agent | 逐条阅读原文，生成中文摘要和亮点，评分(1-10)，建议标签 | Collector 输出的 JSON 数组 | 分析后 JSON 数组（summary_cn / highlights / score / tags） | 必须逐条 WebFetch 原文；评分覆盖 ≥3 个区间；禁止 LLM 万能标签 |
+| **Organizer** 整理 Agent | 去重检查、评分筛选、格式化为标准 Schema、写入 `knowledge/articles/` | Analyzer 输出的 JSON 数组 | `knowledge/articles/{date}-{source}-{slug}.json` + 当日索引 | 管道唯一写权限；三级去重（URL/标题/语义）；禁止覆盖已有文件 |
 
 ### Agent 调度
 
 - **每天 09:00 UTC+8** — Collector 启动，采集前一天 Trending 数据
 - Collector 完成后 → Analyzer 自动触发
-- Analyzer 完成后 → Curator 自动触发
+- Analyzer 完成后 → Organizer 自动触发，入库 `knowledge/articles/`
 - 流程使用 LangGraph StateGraph 编排，支持失败重试（单次，不回退）
+- 分发到 Telegram / 飞书由下游分发 Agent 在 Organizer 完成后触发
 
 ---
 
