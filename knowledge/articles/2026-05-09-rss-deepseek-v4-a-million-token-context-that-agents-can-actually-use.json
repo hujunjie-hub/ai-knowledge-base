@@ -1,0 +1,18 @@
+{
+  "id": "019e0c31-5b70-7392-a9fa-e842eeebd3cc",
+  "title": "DeepSeek-V4：智能体可实际使用的百万Token上下文",
+  "title_en": "DeepSeek-V4: a million-token context that agents can actually use",
+  "source_url": "https://huggingface.co/blog/deepseekv4",
+  "source_type": "rss",
+  "summary": "DeepSeek-V4 实现了百万Token级别的上下文窗口，使AI智能体能够处理超长文档和复杂任务。该模型在长文本理解与推理上进行了优化，显著提升了智能体在真实场景中的可用性。DeepSeek-V4 achieves a million-token context window, enabling AI agents to process extremely long documents and complex tasks. The model is optimized for long-context understanding and reasoning, significantly improving agent usability in real-world scenarios.",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Infra"
+  ],
+  "relevance_score": 0.95,
+  "status": "draft",
+  "fetched_at": "2026-05-09T18:03:41+08:00",
+  "analyzed_at": "2026-05-09T18:03:41+08:00",
+  "published_at": null
+}

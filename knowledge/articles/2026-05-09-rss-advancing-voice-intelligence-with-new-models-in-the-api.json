@@ -1,0 +1,17 @@
+{
+  "id": "019e0c31-5b6b-7d81-88db-04324d90f7f6",
+  "title": "通过API中的新模型推进语音智能",
+  "title_en": "Advancing voice intelligence with new models in the API",
+  "source_url": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api",
+  "source_type": "rss",
+  "summary": "OpenAI在API中推出了新的实时语音模型，能够进行推理、翻译和转录语音，从而实现更自然、更智能的语音交互体验。这些模型增强了语音助手的实时响应能力和多语言支持。",
+  "tags": [
+    "LLM",
+    "Agent"
+  ],
+  "relevance_score": 0.9,
+  "status": "draft",
+  "fetched_at": "2026-05-09T18:03:41+08:00",
+  "analyzed_at": "2026-05-09T18:03:41+08:00",
+  "published_at": null
+}

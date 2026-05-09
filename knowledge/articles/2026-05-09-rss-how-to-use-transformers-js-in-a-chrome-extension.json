@@ -1,0 +1,17 @@
+{
+  "id": "019e0c31-5b71-734a-9ec0-b535a379f073",
+  "title": "如何在Chrome扩展中使用Transformers.js",
+  "title_en": "How to Use Transformers.js in a Chrome Extension",
+  "source_url": "https://huggingface.co/blog/transformersjs-chrome-extension",
+  "source_type": "rss",
+  "summary": "本文介绍了如何在Chrome扩展中集成Transformers.js，实现在浏览器端直接运行机器学习模型（如文本分类、翻译等），无需服务器。通过具体示例展示了从模型加载到推理的完整流程，并讨论了性能优化和扩展开发的最佳实践。This article explains how to integrate Transformers.js into a Chrome extension to run ML models (e.g., text classification, translation) directly in the browser without a server. It demonstrates the full pipeline from model loading to inference with concrete examples, and discusses performance optimization and best practices for extension development.",
+  "tags": [
+    "Tool",
+    "LLM"
+  ],
+  "relevance_score": 0.85,
+  "status": "draft",
+  "fetched_at": "2026-05-09T18:03:41+08:00",
+  "analyzed_at": "2026-05-09T18:03:41+08:00",
+  "published_at": null
+}

@@ -1,0 +1,17 @@
+{
+  "id": "019e0c31-5b6a-743a-b598-c868fa14437e",
+  "title": "GPT-5.5与GPT-5.5-Cyber扩展可信网络访问，助力网络安全",
+  "title_en": "Scaling Trusted Access for Cyber with GPT-5.5 and GPT-5.5-Cyber",
+  "source_url": "https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber",
+  "source_type": "rss",
+  "summary": "OpenAI通过GPT-5.5和GPT-5.5-Cyber扩展了可信网络访问功能，帮助经过验证的防御者加速漏洞研究并保护关键基础设施。该模型专注于网络安全领域，提供增强的安全分析和自动化响应能力。OpenAI expands Trusted Access for Cyber with GPT-5.5 and GPT-5.5-Cyber, enabling verified defenders to accelerate vulnerability research and protect critical infrastructure with specialized cybersecurity capabilities.",
+  "tags": [
+    "LLM",
+    "Agent"
+  ],
+  "relevance_score": 0.95,
+  "status": "draft",
+  "fetched_at": "2026-05-09T18:03:41+08:00",
+  "analyzed_at": "2026-05-09T18:03:41+08:00",
+  "published_at": null
+}

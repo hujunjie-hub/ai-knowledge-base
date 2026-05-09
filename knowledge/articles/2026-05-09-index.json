@@ -1,0 +1,323 @@
+{
+  "date": "2026-05-09",
+  "source": "pipeline-2026-05-09",
+  "generated_at": "2026-05-09T18:03:41+08:00",
+  "total_entries": 28,
+  "filtered_out": [],
+  "entries": [
+    {
+      "filename": "2026-05-09-github_trending-tensorflow-tensorflow.json",
+      "id": "019e0c31-5b68-728d-86b9-b8b85f055ae3",
+      "title": "TensorFlow：面向所有人的开源机器学习框架",
+      "title_en": "TensorFlow: An Open Source Machine Learning Framework for Everyone",
+      "relevance_score": 0.95,
+      "tags": [
+        "Infra",
+        "LLM"
+      ]
+    },
+    {
+      "filename": "2026-05-09-github_trending-huggingface-transformers.json",
+      "id": "019e0c31-5b68-7b83-a728-6019bcd0f1cf",
+      "title": "Hugging Face Transformers",
+      "title_en": "Hugging Face Transformers",
+      "relevance_score": 0.95,
+      "tags": [
+        "LLM",
+        "Infra",
+        "Tool"
+      ]
+    },
+    {
+      "filename": "2026-05-09-github_trending-fighting41love-funnlp.json",
+      "id": "019e0c31-5b68-7916-8285-ded2b5e77b53",
+      "title": "funNLP：中文自然语言处理资源与工具集",
+      "title_en": "funNLP: Chinese NLP Resources and Tools Collection",
+      "relevance_score": 0.85,
+      "tags": [
+        "LLM",
+        "Agent",
+        "Tool",
+        "Paper"
+      ]
+    },
+    {
+      "filename": "2026-05-09-github_trending-labmlai-annotated_deep_learning_paper_implementations.json",
+      "id": "019e0c31-5b69-797e-bf46-c0f047208f0b",
+      "title": "带注释的深度学习论文实现",
+      "title_en": "Annotated Deep Learning Paper Implementations",
+      "relevance_score": 0.85,
+      "tags": [
+        "Paper",
+        "LLM"
+      ]
+    },
+    {
+      "filename": "2026-05-09-rss-mojo-v1-0-0b1-release.json",
+      "id": "019e0c31-5b69-75b1-a476-b9427df7c554",
+      "title": "Mojo v1.0.0b1 发布",
+      "title_en": "Mojo v1.0.0b1 Release",
+      "relevance_score": 0.85,
+      "tags": [
+        "Infra"
+      ]
+    },
+    {
+      "filename": "2026-05-09-rss-jlearn-machine-learning-library-in-j.json",
+      "id": "019e0c31-5b69-73a1-804d-7a878d0f66e3",
+      "title": "jlearn：J语言机器学习库",
+      "title_en": "jlearn: Machine Learning Library in J",
+      "relevance_score": 0.7,
+      "tags": [
+        "Tool"
+      ]
+    },
+    {
+      "filename": "2026-05-09-rss-google-s-prompt-api.json",
+      "id": "019e0c31-5b69-701f-81a4-af872232a0c8",
+      "title": "Google的Prompt API",
+      "title_en": "Google's Prompt API",
+      "relevance_score": 0.85,
+      "tags": [
+        "LLM",
+        "Tool"
+      ]
+    },
+    {
+      "filename": "2026-05-09-rss-open-weights-are-quietly-closing-up-and-that-s-a-problem.json",
+      "id": "019e0c31-5b69-7d5e-8a57-ce8d52df93ee",
+      "title": "开放权重正在悄然收紧——这是一个问题",
+      "title_en": "Open weights are quietly closing up - and that's a problem",
+      "relevance_score": 0.75,
+      "tags": [
+        "LLM",
+        "Infra"
+      ]
+    },
+    {
+      "filename": "2026-05-09-rss-sectorllm-llama2-inference-in-1500-bytes-of-x86-assembly.json",
+      "id": "019e0c31-5b6a-7a79-b179-34f74759205b",
+      "title": "SectorLLM：在不到1500字节的x86汇编中实现Llama2推理",
+      "title_en": "sectorllm: llama2 inference in < 1500 bytes of x86 assembly",
+      "relevance_score": 0.85,
+      "tags": [
+        "LLM",
+        "Infra"
+      ]
+    },
+    {
+      "filename": "2026-05-09-rss-openmythos-a-theoretical-reconstruction-of-the-claude-mythos-architecture-built-.json",
+      "id": "019e0c31-5b6a-7094-8d57-2e5fbd0a2f4b",
+      "title": "OpenMythos：基于可用研究文献从第一性原理重建的Claude Mythos架构理论重构",
+      "title_en": "OpenMythos: A theoretical reconstruction of the Claude Mythos architecture, built from first principles using the available research literature",
+      "relevance_score": 0.95,
+      "tags": [
+        "LLM",
+        "Paper"
+      ]
+    },
+    {
+      "filename": "2026-05-09-rss-porting-microgpt-to-futhark-part-i.json",
+      "id": "019e0c31-5b6a-7abf-b71d-d96d12f7096f",
+      "title": "将microgpt移植到Futhark，第一部分",
+      "title_en": "Porting microgpt to Futhark, Part I",
+      "relevance_score": 0.85,
+      "tags": [
+        "LLM",
+        "Infra"
+      ]
+    },
+    {
+      "filename": "2026-05-09-rss-running-codex-safely-at-openai.json",
+      "id": "019e0c31-5b6a-7575-b468-26b50594d741",
+      "title": "在OpenAI安全运行Codex",
+      "title_en": "Running Codex safely at OpenAI",
+      "relevance_score": 0.95,
+      "tags": [
+        "Agent",
+        "Infra",
+        "Paper"
+      ]
+    },
+    {
+      "filename": "2026-05-09-rss-scaling-trusted-access-for-cyber-with-gpt-5-5-and-gpt-5-5-cyber.json",
+      "id": "019e0c31-5b6a-743a-b598-c868fa14437e",
+      "title": "GPT-5.5与GPT-5.5-Cyber扩展可信网络访问，助力网络安全",
+      "title_en": "Scaling Trusted Access for Cyber with GPT-5.5 and GPT-5.5-Cyber",
+      "relevance_score": 0.95,
+      "tags": [
+        "LLM",
+        "Agent"
+      ]
+    },
+    {
+      "filename": "2026-05-09-rss-parloa-builds-service-agents-customers-want-to-talk-to.json",
+      "id": "019e0c31-5b6b-7bbe-8a1e-c2829ad2ecda",
+      "title": "Parloa打造客户愿意交谈的服务代理",
+      "title_en": "Parloa builds service agents customers want to talk to",
+      "relevance_score": 0.85,
+      "tags": [
+        "Agent",
+        "LLM"
+      ]
+    },
+    {
+      "filename": "2026-05-09-rss-advancing-voice-intelligence-with-new-models-in-the-api.json",
+      "id": "019e0c31-5b6b-7d81-88db-04324d90f7f6",
+      "title": "通过API中的新模型推进语音智能",
+      "title_en": "Advancing voice intelligence with new models in the API",
+      "relevance_score": 0.9,
+      "tags": [
+        "LLM",
+        "Agent"
+      ]
+    },
+    {
+      "filename": "2026-05-09-rss-simplex-rethinks-software-development-with-codex.json",
+      "id": "019e0c31-5b6d-7404-968e-04bdec7cf7ab",
+      "title": "Simplex 借助 Codex 重新思考软件开发",
+      "title_en": "Simplex rethinks software development with Codex",
+      "relevance_score": 0.85,
+      "tags": [
+        "LLM",
+        "Tool"
+      ]
+    },
+    {
+      "filename": "2026-05-09-rss-how-chatgpt-learns-about-the-world-while-protecting-privacy.json",
+      "id": "019e0c31-5b6d-7251-a23d-f1d2c0dfba9f",
+      "title": "ChatGPT如何在保护隐私的同时学习世界知识",
+      "title_en": "How ChatGPT learns about the world while protecting privacy",
+      "relevance_score": 0.85,
+      "tags": [
+        "LLM",
+        "Infra"
+      ]
+    },
+    {
+      "filename": "2026-05-09-rss-uber-uses-openai-to-help-people-earn-smarter-and-book-faster.json",
+      "id": "019e0c31-5b6d-7170-8fc5-88973804b849",
+      "title": "Uber利用OpenAI助力智能赚钱与快速叫车",
+      "title_en": "Uber uses OpenAI to help people earn smarter and book faster",
+      "relevance_score": 0.75,
+      "tags": [
+        "LLM",
+        "Agent"
+      ]
+    },
+    {
+      "filename": "2026-05-09-rss-how-frontier-firms-are-pulling-ahead.json",
+      "id": "019e0c31-5b6d-7651-9e3b-244a0f936ff5",
+      "title": "前沿企业如何拉开差距",
+      "title_en": "How frontier firms are pulling ahead",
+      "relevance_score": 0.92,
+      "tags": [
+        "Agent",
+        "LLM",
+        "Infra"
+      ]
+    },
+    {
+      "filename": "2026-05-09-rss-cybersecqwen-4b-why-defensive-cyber-needs-small-specialized-locally-runnable-mod.json",
+      "id": "019e0c31-5b6e-7f84-9abb-d30eeb9da936",
+      "title": "CyberSecQwen-4B：为何防御性网络需要小型、专业化、可本地运行的模型",
+      "title_en": "CyberSecQwen-4B: Why Defensive Cyber Needs Small, Specialized, Locally-Runnable Models",
+      "relevance_score": 0.85,
+      "tags": [
+        "LLM",
+        "Infra"
+      ]
+    },
+    {
+      "filename": "2026-05-09-rss-emo-pretraining-mixture-of-experts-for-emergent-modularity.json",
+      "id": "019e0c31-5b6e-7db5-89d3-5949382c29b9",
+      "title": "EMO：预训练专家混合以实现涌现模块化",
+      "title_en": "EMO: Pretraining Mixture of Experts for Emergent Modularity",
+      "relevance_score": 0.95,
+      "tags": [
+        "LLM",
+        "Paper"
+      ]
+    },
+    {
+      "filename": "2026-05-09-rss-vllm-v0-to-v1-correctness-before-corrections-in-rl.json",
+      "id": "019e0c31-5b6e-79c1-a3f5-7e12f9a4cf35",
+      "title": "vLLM从V0到V1：强化学习中先正确再修正",
+      "title_en": "vLLM V0 to V1: Correctness Before Corrections in RL",
+      "relevance_score": 0.9,
+      "tags": [
+        "LLM",
+        "Infra",
+        "Paper"
+      ]
+    },
+    {
+      "filename": "2026-05-09-rss-granite-4-1-llms-how-they-re-built.json",
+      "id": "019e0c31-5b6e-7c01-adf9-509b0f8c77c4",
+      "title": "Granite 4.1 大语言模型：构建之道",
+      "title_en": "Granite 4.1 LLMs: How They’re Built",
+      "relevance_score": 0.95,
+      "tags": [
+        "LLM",
+        "Paper"
+      ]
+    },
+    {
+      "filename": "2026-05-09-rss-deepinfra-on-hugging-face-inference-providers.json",
+      "id": "019e0c31-5b6f-7bb7-a8da-febf118cd9df",
+      "title": "DeepInfra 登陆 Hugging Face 推理提供商 🔥",
+      "title_en": "DeepInfra on Hugging Face Inference Providers 🔥",
+      "relevance_score": 0.85,
+      "tags": [
+        "Infra",
+        "LLM"
+      ]
+    },
+    {
+      "filename": "2026-05-09-rss-introducing-nvidia-nemotron-3-nano-omni-long-context-multimodal-intelligence-for.json",
+      "id": "019e0c31-5b6f-77fa-b9d6-d3646ee1d69d",
+      "title": "NVIDIA Nemotron 3 Nano Omni 介绍：面向文档、音频和视频智能体的长上下文多模态智能",
+      "title_en": "Introducing NVIDIA Nemotron 3 Nano Omni: Long-Context Multimodal Intelligence for Documents, Audio and Video Agents",
+      "relevance_score": 0.95,
+      "tags": [
+        "LLM",
+        "Agent",
+        "Paper"
+      ]
+    },
+    {
+      "filename": "2026-05-09-rss-how-to-build-scalable-web-apps-with-openai-s-privacy-filter.json",
+      "id": "019e0c31-5b70-768a-af3d-c7b9baa6154c",
+      "title": "使用OpenAI隐私过滤器构建可扩展的Web应用",
+      "title_en": "How to build scalable web apps with OpenAI's Privacy Filter",
+      "relevance_score": 0.75,
+      "tags": [
+        "LLM",
+        "Tool"
+      ]
+    },
+    {
+      "filename": "2026-05-09-rss-deepseek-v4-a-million-token-context-that-agents-can-actually-use.json",
+      "id": "019e0c31-5b70-7392-a9fa-e842eeebd3cc",
+      "title": "DeepSeek-V4：智能体可实际使用的百万Token上下文",
+      "title_en": "DeepSeek-V4: a million-token context that agents can actually use",
+      "relevance_score": 0.95,
+      "tags": [
+        "LLM",
+        "Agent",
+        "Infra"
+      ]
+    },
+    {
+      "filename": "2026-05-09-rss-how-to-use-transformers-js-in-a-chrome-extension.json",
+      "id": "019e0c31-5b71-734a-9ec0-b535a379f073",
+      "title": "如何在Chrome扩展中使用Transformers.js",
+      "title_en": "How to Use Transformers.js in a Chrome Extension",
+      "relevance_score": 0.85,
+      "tags": [
+        "Tool",
+        "LLM"
+      ]
+    }
+  ]
+}

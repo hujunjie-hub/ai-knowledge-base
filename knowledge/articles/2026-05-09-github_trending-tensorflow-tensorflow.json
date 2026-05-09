@@ -1,0 +1,17 @@
+{
+  "id": "019e0c31-5b68-728d-86b9-b8b85f055ae3",
+  "title": "TensorFlow：面向所有人的开源机器学习框架",
+  "title_en": "TensorFlow: An Open Source Machine Learning Framework for Everyone",
+  "source_url": "https://github.com/tensorflow/tensorflow",
+  "source_type": "github_trending",
+  "summary": "TensorFlow是一个由Google开发的开源机器学习框架，支持从研究到生产的全流程，提供Python和C++接口，支持分布式训练和深度学习模型部署。它广泛应用于AI/LLM训练和推理，是业界最核心的ML基础设施之一。TensorFlow is an open-source machine learning framework developed by Google, supporting the full workflow from research to production with Python and C++ APIs, distributed training, and deep learning model deployment. It is widely used for AI/LLM training and inference, serving as one of the most core ML infrastructures in the industry.",
+  "tags": [
+    "Infra",
+    "LLM"
+  ],
+  "relevance_score": 0.95,
+  "status": "draft",
+  "fetched_at": "2026-05-09T18:03:41+08:00",
+  "analyzed_at": "2026-05-09T18:03:41+08:00",
+  "published_at": null
+}

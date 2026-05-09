@@ -1,0 +1,16 @@
+{
+  "id": "019e0c31-5b69-75b1-a476-b9427df7c554",
+  "title": "Mojo v1.0.0b1 发布",
+  "title_en": "Mojo v1.0.0b1 Release",
+  "source_url": "https://mojolang.org/releases/v1.0.0b1",
+  "source_type": "rss",
+  "summary": "Mojo 是一种面向 AI/ML 开发的新型编程语言，旨在结合 Python 的易用性与 C 的性能。v1.0.0b1 版本标志着其首个公开测试版，提供了用于高性能计算和 AI 工作负载的完整功能集。Mojo is a new programming language for AI/ML development, aiming to combine Python's ease of use with C's performance. The v1.0.0b1 release marks its first public beta, offering a full feature set for high-performance computing and AI workloads.",
+  "tags": [
+    "Infra"
+  ],
+  "relevance_score": 0.85,
+  "status": "draft",
+  "fetched_at": "2026-05-09T18:03:41+08:00",
+  "analyzed_at": "2026-05-09T18:03:41+08:00",
+  "published_at": null
+}

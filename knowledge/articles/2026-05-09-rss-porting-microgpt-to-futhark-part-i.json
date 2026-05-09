@@ -1,0 +1,17 @@
+{
+  "id": "019e0c31-5b6a-7abf-b71d-d96d12f7096f",
+  "title": "将microgpt移植到Futhark，第一部分",
+  "title_en": "Porting microgpt to Futhark, Part I",
+  "source_url": "https://www.kmjn.org/notes/microgpt_futhark.html",
+  "source_type": "rss",
+  "summary": "本文介绍了将microgpt（一个轻量级GPT实现）移植到Futhark（一种数据并行函数式编程语言）的过程。作者详细描述了移植中的技术挑战和优化策略，展示了如何在GPU上高效运行小型语言模型。This article describes the process of porting microgpt, a lightweight GPT implementation, to Futhark, a data-parallel functional programming language. The author details technical challenges and optimization strategies, demonstrating how to efficiently run small language models on GPUs.",
+  "tags": [
+    "LLM",
+    "Infra"
+  ],
+  "relevance_score": 0.85,
+  "status": "draft",
+  "fetched_at": "2026-05-09T18:03:41+08:00",
+  "analyzed_at": "2026-05-09T18:03:41+08:00",
+  "published_at": null
+}

@@ -1,0 +1,17 @@
+{
+  "id": "019e0c31-5b6b-7bbe-8a1e-c2829ad2ecda",
+  "title": "Parloa打造客户愿意交谈的服务代理",
+  "title_en": "Parloa builds service agents customers want to talk to",
+  "source_url": "https://openai.com/index/parloa",
+  "source_type": "rss",
+  "summary": "Parloa利用OpenAI模型驱动可扩展的语音AI客服代理，使企业能够设计、模拟和部署可靠的实时交互。该平台专注于提升客户服务体验，通过自然语言处理实现高效对话。Parloa leverages OpenAI models to power scalable, voice-driven AI customer service agents, enabling enterprises to design, simulate, and deploy reliable, real-time interactions. The platform focuses on enhancing customer service experience through natural language processing for efficient conversations.",
+  "tags": [
+    "Agent",
+    "LLM"
+  ],
+  "relevance_score": 0.85,
+  "status": "draft",
+  "fetched_at": "2026-05-09T18:03:41+08:00",
+  "analyzed_at": "2026-05-09T18:03:41+08:00",
+  "published_at": null
+}

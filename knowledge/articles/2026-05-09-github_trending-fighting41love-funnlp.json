@@ -1,0 +1,19 @@
+{
+  "id": "019e0c31-5b68-7916-8285-ded2b5e77b53",
+  "title": "funNLP：中文自然语言处理资源与工具集",
+  "title_en": "funNLP: Chinese NLP Resources and Tools Collection",
+  "source_url": "https://github.com/fighting41love/funNLP",
+  "source_type": "github_trending",
+  "summary": "这是一个汇集大量中文自然语言处理（NLP）相关资源与工具的开源仓库，涵盖敏感词检测、命名实体识别、情感分析、知识图谱、预训练模型（如BERT、GPT-2）、语音识别、文本生成、数据增强等众多领域。仓库包含丰富的语料库、数据集、代码实现和实用工具，适合NLP研究者和工程师快速查找和使用。This repository aggregates a vast collection of Chinese NLP resources and tools, covering sensitive word detection, named entity recognition, sentiment analysis, knowledge graphs, pre-trained models (e.g., BERT, GPT-2), speech recognition, text generation, data augmentation, and more. It includes numerous corpora, datasets, code implementations, and utilities, making it a valuable reference for NLP researchers and engineers.",
+  "tags": [
+    "LLM",
+    "Agent",
+    "Tool",
+    "Paper"
+  ],
+  "relevance_score": 0.85,
+  "status": "draft",
+  "fetched_at": "2026-05-09T18:03:41+08:00",
+  "analyzed_at": "2026-05-09T18:03:41+08:00",
+  "published_at": null
+}

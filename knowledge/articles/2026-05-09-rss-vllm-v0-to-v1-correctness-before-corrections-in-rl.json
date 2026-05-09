@@ -1,0 +1,18 @@
+{
+  "id": "019e0c31-5b6e-79c1-a3f5-7e12f9a4cf35",
+  "title": "vLLM从V0到V1：强化学习中先正确再修正",
+  "title_en": "vLLM V0 to V1: Correctness Before Corrections in RL",
+  "source_url": "https://huggingface.co/blog/ServiceNow-AI/correctness-before-corrections",
+  "source_type": "rss",
+  "summary": "本文介绍了vLLM从V0到V1的演进，重点在于强化学习（RL）场景下推理引擎的正确性优先于性能优化。文章讨论了vLLM V1如何通过改进调度、内存管理和内核设计，确保在RL训练中生成结果的准确性和一致性，同时保持高效推理。This article discusses the evolution of vLLM from V0 to V1, emphasizing correctness over performance optimization in reinforcement learning (RL) scenarios. It covers how vLLM V1 improves scheduling, memory management, and kernel design to ensure accurate and consistent generation results during RL training while maintaining efficient inference.",
+  "tags": [
+    "LLM",
+    "Infra",
+    "Paper"
+  ],
+  "relevance_score": 0.9,
+  "status": "draft",
+  "fetched_at": "2026-05-09T18:03:41+08:00",
+  "analyzed_at": "2026-05-09T18:03:41+08:00",
+  "published_at": null
+}

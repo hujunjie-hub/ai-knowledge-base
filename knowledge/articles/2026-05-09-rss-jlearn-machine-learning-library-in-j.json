@@ -1,0 +1,16 @@
+{
+  "id": "019e0c31-5b69-73a1-804d-7a878d0f66e3",
+  "title": "jlearn：J语言机器学习库",
+  "title_en": "jlearn: Machine Learning Library in J",
+  "source_url": "https://github.com/jonghough/jlearn",
+  "source_type": "rss",
+  "summary": "jlearn 是一个用 J 语言实现的机器学习库，提供了多种常见的机器学习算法和工具。该项目旨在将机器学习能力引入 J 语言生态，适合在 J 环境中进行数据分析和模型训练。jlearn is a machine learning library implemented in the J programming language, offering various common ML algorithms and tools, aiming to bring ML capabilities to the J ecosystem for data analysis and model training.",
+  "tags": [
+    "Tool"
+  ],
+  "relevance_score": 0.7,
+  "status": "draft",
+  "fetched_at": "2026-05-09T18:03:41+08:00",
+  "analyzed_at": "2026-05-09T18:03:41+08:00",
+  "published_at": null
+}

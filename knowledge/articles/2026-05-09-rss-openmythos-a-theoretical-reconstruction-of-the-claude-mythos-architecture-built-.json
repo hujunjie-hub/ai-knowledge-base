@@ -1,0 +1,17 @@
+{
+  "id": "019e0c31-5b6a-7094-8d57-2e5fbd0a2f4b",
+  "title": "OpenMythos：基于可用研究文献从第一性原理重建的Claude Mythos架构理论重构",
+  "title_en": "OpenMythos: A theoretical reconstruction of the Claude Mythos architecture, built from first principles using the available research literature",
+  "source_url": "https://github.com/kyegomez/OpenMythos",
+  "source_type": "rss",
+  "summary": "OpenMythos 项目从第一性原理出发，利用公开研究文献对 Claude Mythos 架构进行理论重建，旨在复现并理解其核心设计。该项目涉及大型语言模型（LLM）的底层架构创新，对 AI 研究和工程实践具有参考价值。The OpenMythos project theoretically reconstructs the Claude Mythos architecture from first principles using available research literature, aiming to reproduce and understand its core design. It involves underlying architectural innovations for large language models (LLMs) and offers reference value for AI research and engineering practice.",
+  "tags": [
+    "LLM",
+    "Paper"
+  ],
+  "relevance_score": 0.95,
+  "status": "draft",
+  "fetched_at": "2026-05-09T18:03:41+08:00",
+  "analyzed_at": "2026-05-09T18:03:41+08:00",
+  "published_at": null
+}

@@ -1,0 +1,17 @@
+{
+  "id": "019e0c31-5b6f-7bb7-a8da-febf118cd9df",
+  "title": "DeepInfra 登陆 Hugging Face 推理提供商 🔥",
+  "title_en": "DeepInfra on Hugging Face Inference Providers 🔥",
+  "source_url": "https://huggingface.co/blog/inference-providers-deepinfra",
+  "source_type": "rss",
+  "summary": "DeepInfra 现已作为 Hugging Face 推理提供商之一上线，用户可通过统一的 Hugging Face API 调用 DeepInfra 托管的多种开源模型（如 Llama、Mistral 等），实现低延迟、高吞吐的推理服务。这一集成简化了模型部署流程，使开发者无需管理底层基础设施即可快速使用高性能推理。DeepInfra is now available as one of the Hugging Face Inference Providers, allowing users to access various open-source models hosted by DeepInfra (e.g., Llama, Mistral) via a unified Hugging Face API for low-latency, high-throughput inference. This integration simplifies model deployment, enabling developers to leverage high-performance inference without managing underlying infrastructure.",
+  "tags": [
+    "Infra",
+    "LLM"
+  ],
+  "relevance_score": 0.85,
+  "status": "draft",
+  "fetched_at": "2026-05-09T18:03:41+08:00",
+  "analyzed_at": "2026-05-09T18:03:41+08:00",
+  "published_at": null
+}

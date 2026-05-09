@@ -1,0 +1,17 @@
+{
+  "id": "019e0c31-5b69-797e-bf46-c0f047208f0b",
+  "title": "带注释的深度学习论文实现",
+  "title_en": "Annotated Deep Learning Paper Implementations",
+  "source_url": "https://github.com/labmlai/annotated_deep_learning_paper_implementations",
+  "source_type": "github_trending",
+  "summary": "该项目提供了60多种深度学习论文的PyTorch实现，并附带详细的逐行注释，涵盖Transformer、GAN、强化学习、优化器等核心领域。每个实现都采用文字编程风格，将代码与解释性笔记并排展示，便于学习和复现。",
+  "tags": [
+    "Paper",
+    "LLM"
+  ],
+  "relevance_score": 0.85,
+  "status": "draft",
+  "fetched_at": "2026-05-09T18:03:41+08:00",
+  "analyzed_at": "2026-05-09T18:03:41+08:00",
+  "published_at": null
+}

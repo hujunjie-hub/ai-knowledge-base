@@ -1,0 +1,18 @@
+{
+  "id": "019e0c31-5b6d-7651-9e3b-244a0f936ff5",
+  "title": "前沿企业如何拉开差距",
+  "title_en": "How frontier firms are pulling ahead",
+  "source_url": "https://openai.com/index/introducing-b2b-signals",
+  "source_type": "rss",
+  "summary": "OpenAI的B2B Signals研究揭示了前沿企业如何深化AI应用，扩展基于Codex的智能体工作流，并构建持久的竞争优势。该报告展示了企业通过大规模部署AI代理和自动化流程来提升效率与创新能力。OpenAI's B2B Signals research reveals how frontier enterprises deepen AI adoption, scale Codex-powered agentic workflows, and build durable competitive advantage, demonstrating how companies enhance efficiency and innovation through large-scale deployment of AI agents and automated processes.",
+  "tags": [
+    "Agent",
+    "LLM",
+    "Infra"
+  ],
+  "relevance_score": 0.92,
+  "status": "draft",
+  "fetched_at": "2026-05-09T18:03:41+08:00",
+  "analyzed_at": "2026-05-09T18:03:41+08:00",
+  "published_at": null
+}

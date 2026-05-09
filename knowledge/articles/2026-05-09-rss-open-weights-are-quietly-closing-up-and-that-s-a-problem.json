@@ -1,0 +1,17 @@
+{
+  "id": "019e0c31-5b69-7d5e-8a57-ce8d52df93ee",
+  "title": "开放权重正在悄然收紧——这是一个问题",
+  "title_en": "Open weights are quietly closing up - and that's a problem",
+  "source_url": "https://martinalderson.com/posts/open-weights-are-quietly-closing-up/",
+  "source_type": "rss",
+  "summary": "本文探讨了AI模型开放权重逐渐受限的趋势，指出虽然许多模型仍标榜开放，但实际使用、修改和分发的自由度正在下降，这对研究可复现性和社区创新构成威胁。作者分析了许可证变更、访问限制等具体案例，呼吁关注开放定义的实际执行。The article examines the trend of AI model open weights becoming increasingly restricted, noting that while many models are still marketed as open, the actual freedom to use, modify, and distribute them is declining, threatening research reproducibility and community innovation. The author analyzes specific cases of license changes and access restrictions, calling for attention to the actual enforcement of open definitions.",
+  "tags": [
+    "LLM",
+    "Infra"
+  ],
+  "relevance_score": 0.75,
+  "status": "draft",
+  "fetched_at": "2026-05-09T18:03:41+08:00",
+  "analyzed_at": "2026-05-09T18:03:41+08:00",
+  "published_at": null
+}

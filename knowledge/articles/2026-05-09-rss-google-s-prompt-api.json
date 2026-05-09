@@ -1,0 +1,17 @@
+{
+  "id": "019e0c31-5b69-701f-81a4-af872232a0c8",
+  "title": "Google的Prompt API",
+  "title_en": "Google's Prompt API",
+  "source_url": "https://wil.to/posts/googles-prompt-api/",
+  "source_type": "rss",
+  "summary": "本文介绍了Google推出的Prompt API，这是一个用于与大型语言模型交互的标准化接口，旨在简化提示工程和模型调用流程。该API支持多轮对话、上下文管理和输出格式化，为开发者提供了更高效的AI应用构建方式。The article introduces Google's Prompt API, a standardized interface for interacting with large language models, designed to simplify prompt engineering and model invocation workflows. It supports multi-turn conversations, context management, and output formatting, providing developers with a more efficient way to build AI applications.",
+  "tags": [
+    "LLM",
+    "Tool"
+  ],
+  "relevance_score": 0.85,
+  "status": "draft",
+  "fetched_at": "2026-05-09T18:03:41+08:00",
+  "analyzed_at": "2026-05-09T18:03:41+08:00",
+  "published_at": null
+}

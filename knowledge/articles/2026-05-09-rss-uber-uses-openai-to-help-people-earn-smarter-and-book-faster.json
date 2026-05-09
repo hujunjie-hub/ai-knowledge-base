@@ -1,0 +1,17 @@
+{
+  "id": "019e0c31-5b6d-7170-8fc5-88973804b849",
+  "title": "Uber利用OpenAI助力智能赚钱与快速叫车",
+  "title_en": "Uber uses OpenAI to help people earn smarter and book faster",
+  "source_url": "https://openai.com/index/uber",
+  "source_type": "rss",
+  "summary": "Uber利用OpenAI驱动AI助手和语音功能，帮助司机更智能地赚钱，乘客在全球实时市场中更快地叫车。该集成利用OpenAI的模型优化Uber平台的匹配和交互效率。Uber leverages OpenAI to power AI assistants and voice features that help drivers earn smarter and riders book faster across a global real-time marketplace, using OpenAI's models to optimize matching and interaction efficiency on the Uber platform.",
+  "tags": [
+    "LLM",
+    "Agent"
+  ],
+  "relevance_score": 0.75,
+  "status": "draft",
+  "fetched_at": "2026-05-09T18:03:41+08:00",
+  "analyzed_at": "2026-05-09T18:03:41+08:00",
+  "published_at": null
+}

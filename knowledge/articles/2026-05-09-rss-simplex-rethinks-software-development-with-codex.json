@@ -1,0 +1,17 @@
+{
+  "id": "019e0c31-5b6d-7404-968e-04bdec7cf7ab",
+  "title": "Simplex 借助 Codex 重新思考软件开发",
+  "title_en": "Simplex rethinks software development with Codex",
+  "source_url": "https://openai.com/index/simplex",
+  "source_type": "rss",
+  "summary": "Simplex 利用 ChatGPT Enterprise 和 Codex 加速软件开发，将设计、构建和测试时间缩短，并扩展 AI 驱动的工作流。Simplex boosts software development with ChatGPT Enterprise and Codex, reducing design, build, and testing time while scaling AI-driven workflows.",
+  "tags": [
+    "LLM",
+    "Tool"
+  ],
+  "relevance_score": 0.85,
+  "status": "draft",
+  "fetched_at": "2026-05-09T18:03:41+08:00",
+  "analyzed_at": "2026-05-09T18:03:41+08:00",
+  "published_at": null
+}

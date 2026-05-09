@@ -1,0 +1,17 @@
+{
+  "id": "019e0c31-5b6e-7c01-adf9-509b0f8c77c4",
+  "title": "Granite 4.1 大语言模型：构建之道",
+  "title_en": "Granite 4.1 LLMs: How They’re Built",
+  "source_url": "https://huggingface.co/blog/ibm-granite/granite-4-1",
+  "source_type": "rss",
+  "summary": "本文介绍了IBM Granite 4.1系列大语言模型的构建方法，包括模型架构、训练数据、训练流程等关键技术细节。文章详细描述了从数据收集、预处理到模型训练和优化的完整流程，并讨论了模型在多种自然语言处理任务上的性能表现。This article introduces the construction methodology of IBM's Granite 4.1 series large language models, covering key technical details such as model architecture, training data, and training pipeline. It elaborates on the complete process from data collection and preprocessing to model training and optimization, and discusses the model's performance on various NLP tasks.",
+  "tags": [
+    "LLM",
+    "Paper"
+  ],
+  "relevance_score": 0.95,
+  "status": "draft",
+  "fetched_at": "2026-05-09T18:03:41+08:00",
+  "analyzed_at": "2026-05-09T18:03:41+08:00",
+  "published_at": null
+}

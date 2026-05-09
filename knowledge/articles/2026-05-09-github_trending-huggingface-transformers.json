@@ -1,0 +1,18 @@
+{
+  "id": "019e0c31-5b68-7b83-a728-6019bcd0f1cf",
+  "title": "Hugging Face Transformers",
+  "title_en": "Hugging Face Transformers",
+  "source_url": "https://github.com/huggingface/transformers",
+  "source_type": "github_trending",
+  "summary": "Hugging Face Transformers 是一个用于加载、训练和部署最先进的 Transformer 模型的框架，支持文本、视觉、音频和多模态任务，兼容 PyTorch、TensorFlow 和 JAX。该库提供了数千个预训练模型（包括 LLM 如 DeepSeek、Gemma、Qwen 以及 VLM），并集成了模型中心、推理 API 和训练工具。Hugging Face Transformers is a framework for loading, training, and deploying state-of-the-art Transformer models for text, vision, audio, and multimodal tasks, compatible with PyTorch, TensorFlow, and JAX. It provides thousands of pretrained models (including LLMs like DeepSeek, Gemma, Qwen, and VLMs) and integrates a model hub, inference API, and training utilities.",
+  "tags": [
+    "LLM",
+    "Infra",
+    "Tool"
+  ],
+  "relevance_score": 0.95,
+  "status": "draft",
+  "fetched_at": "2026-05-09T18:03:41+08:00",
+  "analyzed_at": "2026-05-09T18:03:41+08:00",
+  "published_at": null
+}

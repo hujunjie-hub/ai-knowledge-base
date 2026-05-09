@@ -1,0 +1,18 @@
+{
+  "id": "019e0c31-5b6a-7575-b468-26b50594d741",
+  "title": "在OpenAI安全运行Codex",
+  "title_en": "Running Codex safely at OpenAI",
+  "source_url": "https://openai.com/index/running-codex-safely",
+  "source_type": "rss",
+  "summary": "本文介绍了OpenAI如何通过沙箱隔离、审批机制、网络策略和Agent原生遥测技术，安全地运行Codex，以支持安全合规的编码Agent应用。文章详细阐述了这些安全措施的具体实现，确保Codex在提供强大编码能力的同时，防止恶意代码执行和数据泄露。",
+  "tags": [
+    "Agent",
+    "Infra",
+    "Paper"
+  ],
+  "relevance_score": 0.95,
+  "status": "draft",
+  "fetched_at": "2026-05-09T18:03:41+08:00",
+  "analyzed_at": "2026-05-09T18:03:41+08:00",
+  "published_at": null
+}

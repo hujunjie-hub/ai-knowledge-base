@@ -1,0 +1,17 @@
+{
+  "id": "019e0c31-5b6e-7db5-89d3-5949382c29b9",
+  "title": "EMO：预训练专家混合以实现涌现模块化",
+  "title_en": "EMO: Pretraining Mixture of Experts for Emergent Modularity",
+  "source_url": "https://huggingface.co/blog/allenai/emo",
+  "source_type": "rss",
+  "summary": "本文介绍了EMO（Emergent Modularity Optimization），一种通过预训练专家混合（Mixture of Experts, MoE）架构来促进模型涌现模块化的方法。该方法在保持计算效率的同时，提升了模型的可解释性和任务适应性。具体技术细节包括稀疏门控机制和动态专家分配策略。",
+  "tags": [
+    "LLM",
+    "Paper"
+  ],
+  "relevance_score": 0.95,
+  "status": "draft",
+  "fetched_at": "2026-05-09T18:03:41+08:00",
+  "analyzed_at": "2026-05-09T18:03:41+08:00",
+  "published_at": null
+}

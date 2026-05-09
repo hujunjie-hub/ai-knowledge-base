@@ -1,0 +1,17 @@
+{
+  "id": "019e0c31-5b70-768a-af3d-c7b9baa6154c",
+  "title": "使用OpenAI隐私过滤器构建可扩展的Web应用",
+  "title_en": "How to build scalable web apps with OpenAI's Privacy Filter",
+  "source_url": "https://huggingface.co/blog/openai-privacy-filter-web-apps",
+  "source_type": "rss",
+  "summary": "本文介绍了如何利用OpenAI的隐私过滤器构建可扩展的Web应用，重点讨论了在保护用户隐私的同时实现高效数据处理的技术方案。文章提供了具体的实现步骤和代码示例，帮助开发者将隐私保护功能集成到AI驱动的应用中。This article explains how to build scalable web applications using OpenAI's privacy filter, focusing on technical approaches to protect user privacy while achieving efficient data processing. It provides implementation steps and code examples for integrating privacy protection into AI-powered applications.",
+  "tags": [
+    "LLM",
+    "Tool"
+  ],
+  "relevance_score": 0.75,
+  "status": "draft",
+  "fetched_at": "2026-05-09T18:03:41+08:00",
+  "analyzed_at": "2026-05-09T18:03:41+08:00",
+  "published_at": null
+}
