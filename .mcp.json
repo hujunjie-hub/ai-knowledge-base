@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "knowledge": {
+      "type": "stdio",
+      "command": "python3",
+      "args": ["pipeline/mcp_knowledge_server.py"]
+    }
+  }
+}
