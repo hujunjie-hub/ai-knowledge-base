@@ -1,0 +1,17 @@
+{
+  "id": "05e710a0-019e-7000-8c3b-1a2b3c4d5e6f",
+  "title": "LangGraph：有状态多 Agent 编排框架",
+  "title_en": "langchain-ai/langgraph",
+  "source_url": "https://github.com/langchain-ai/langgraph",
+  "source_type": "github_trending",
+  "summary": "LangChain 出品的有状态多 Agent 编排框架，支持循环图与人工介入。",
+  "tags": [
+    "Agent",
+    "Tool"
+  ],
+  "relevance_score": 0.91,
+  "status": "draft",
+  "fetched_at": "2026-05-08T09:00:00+08:00",
+  "analyzed_at": "2026-05-08T13:00:00+08:00",
+  "published_at": null
+}

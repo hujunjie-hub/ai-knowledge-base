@@ -30,8 +30,9 @@ REQUIRED_FIELDS: dict[str, type] = {
 VALID_STATUSES = frozenset({"draft", "review", "published", "archived"})
 VALID_AUDIENCES = frozenset({"beginner", "intermediate", "advanced"})
 
-# {source}-{YYYYMMDD}-{NNN}，NNN 为 3 位序号
-_ID_RE = re.compile(r"^[a-z][a-z0-9_-]+-\d{8}-\d{3}$")
+_ID_RE = re.compile(
+    r"^[0-9a-f]{8}-[0-9a-f]{4}-7[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+)
 _URL_RE = re.compile(r"^https?://")
 _SUMMARY_MIN_LEN = 20
 _TAGS_MIN_COUNT = 1
@@ -110,7 +111,7 @@ def validate_file(filepath: Path) -> list[str]:
     if field_ok.get("id") and not _ID_RE.match(data["id"]):
         errors.append(
             f"{label}: ID 格式错误，"
-            f"期望 `{{source}}-{{YYYYMMDD}}-{{NNN}}`，"
+            f"期望 UUID v7 格式，"
             f"实际 `{data['id']}`"
         )
 
